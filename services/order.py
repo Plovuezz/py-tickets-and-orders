@@ -9,7 +9,7 @@ import datetime
 def create_order(
         tickets: list,
         username: str,
-        date: datetime = None
+        date: datetime.datetime = None
 ) -> None:
     user = User.objects.get(username=username)
 
